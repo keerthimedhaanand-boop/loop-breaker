@@ -1,0 +1,81 @@
+{
+  "model": {
+    "n_users": 6000,
+    "n_prompts": 141696,
+    "loop_prompt_share": 10.2,
+    "rule_precision": 0.724,
+    "rule_recall": 0.617,
+    "gb_auc": 0.981,
+    "gb_pr_auc": 0.88,
+    "gb_precision": 0.861,
+    "gb_recall": 0.721,
+    "loops_flagged_within_2_prompts": 64.2,
+    "feature_importance": {
+      "fix_streak": 0.721,
+      "credits_since_ok": 0.135,
+      "fails_last3": 0.082,
+      "same_error_last3": 0.028,
+      "sim_mean3": 0.02,
+      "reverts_last5": 0.009,
+      "step": 0.005
+    }
+  },
+  "credits": {
+    "share_of_credits_spent_in_loops": 13.4,
+    "avg_loop_credits_per_looping_user": 7.1
+  },
+  "churn": {
+    "overall": 31.3,
+    "looped_users": 38.6,
+    "no_loop_users": 25.0,
+    "by_waste_band": [
+      {
+        "band": "0",
+        "churn": 25.0,
+        "users": 3202
+      },
+      {
+        "band": "1-5",
+        "churn": 28.7,
+        "users": 1169
+      },
+      {
+        "band": "6-10",
+        "churn": 40.7,
+        "users": 1002
+      },
+      {
+        "band": "10+",
+        "churn": 53.4,
+        "users": 627
+      }
+    ],
+    "odds_multiplier_per_wasted_credit": 1.091
+  },
+  "loop_rate_by_persona": {
+    "Designer": 0.462,
+    "Developer": 0.318,
+    "Founder": 0.482,
+    "Small business": 0.524,
+    "Student": 0.496
+  },
+  "loop_rate_by_complexity": {
+    "Complex": 0.682,
+    "Medium": 0.504,
+    "Simple": 0.337
+  },
+  "experiment": {
+    "name": "Loop Rescue",
+    "baseline_churn_looped": 38.6,
+    "mde_points": 3,
+    "alpha": 0.05,
+    "power": 0.8,
+    "users_per_arm": 4112,
+    "primary_metric": "30-day churn among users who hit a detected loop",
+    "guardrails": [
+      "credits refunded per user",
+      "time to first published app",
+      "support tickets"
+    ]
+  }
+}

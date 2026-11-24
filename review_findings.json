@@ -1,0 +1,12 @@
+{"source":"Trustpilot (uk.trustpilot.com/review/lovable.dev), public reviews collected 24 Nov 2026",
+ "recent_sample":{"n":200,"date_range":["2026-10-04","2026-11-24"],"rating_dist_1to5":[29,8,3,6,154],
+  "themes":{"credits_cost":{"share":19.5,"avg_with":2.23,"avg_without":4.73},
+            "support":{"share":11.0,"avg_with":2.0,"avg_without":4.52},
+            "loops_bugs":{"share":7.0,"avg_with":2.57,"avg_without":4.37},
+            "deploy_domain":{"share":4.0},"backend":{"share":3.0},"security":{"share":2.0},
+            "ease_speed":{"share":53.5,"avg_with":4.57,"avg_without":3.86},"design":{"share":7.0}},
+  "positive_4_5_star_n":160,"positive_mentioning_credits":10},
+ "negative_sample":{"n":135,"note":"all 1-2 star reviews in the recent sample plus the 4 most recent pages of 1-star and 2-star reviews, de-duplicated",
+  "themes":{"credits_cost":74.1,"loops_bugs":38.5,"support":37.8,"backend":8.1,"security":3.7,"deploy_domain":3.7},
+  "credits_and_loops_together":28.9,"still_mention_ease_or_speed":30.4},
+ "method":"Keyword/regex theme tagging; a review can have several themes. Trustpilot shows 10 pages per filter without login, so samples are the most recent reviews."}
